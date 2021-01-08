@@ -1,0 +1,15 @@
+PRINT "Number to check: ";
+INPUT IN
+COUNTER = 0
+CURRENT = IN
+
+WHILE CURRENT <> 1
+  COUNTER = COUNTER + 1
+  IF CURRENT MOD 2 = 0 THEN
+    CURRENT = CURRENT / 2
+  ELSE
+    CURRENT = 3 * CURRENT + 1
+  END IF
+WEND
+
+PRINT "The number "; STR$(IN); " took "; STR$(COUNTER); " iterations"
